@@ -1,0 +1,60 @@
+@import "../../../../../assets/scss/breakpoints.scss";
+
+.hotel-name {
+  p {
+    font-size: 14px;
+  }
+}
+.panel-title {
+    padding: 0 0.5rem;
+}
+
+.expanded {
+    display: flex;
+    align-items: center;
+    .description {
+      font-size: 12px;
+    }
+    & > .description {
+        flex: 2;
+    }
+    & > .actions {
+        flex: 1;
+    }
+
+    .show-more {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 0.5rem;
+        button {
+            box-sizing: border-box;
+            height: 3rem;
+            background: #fcdb67;
+            width: 5.5rem;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border: none;
+            font-family: "Lato", sans-serif;
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    .expanded {
+        display: flex;
+        align-items: center;
+        .description {
+          font-size: 14px;
+        }
+        & > div {
+            flex: 1;
+        }
+        .show-more {
+            button {
+                width: 9.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}

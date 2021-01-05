@@ -1,0 +1,28 @@
+@import '../../../../../assets/scss/breakpoints.scss';
+
+.container {
+    position: relative;
+    justify-content: start;
+    padding: 2.5rem 1rem;
+    align-items: start;
+    .content {
+      display: flex;
+      flex-direction: column;
+      .card-grid {
+          min-height: 30vh;
+      }
+    }
+}
+
+@include breakpoint(desktop) {
+    .container {
+        position: relative;
+        padding: 2.5rem 14rem;
+    }
+}
+@include breakpoint(tablet) {
+    .container {
+        position: relative;
+        padding: 2.5rem 12rem;
+    }
+}

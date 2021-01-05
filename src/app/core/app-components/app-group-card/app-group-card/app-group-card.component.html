@@ -1,0 +1,45 @@
+<div class="container">
+    <mat-accordion>
+        <mat-expansion-panel
+            *ngFor="let hotel of hotels"
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+        >
+            <mat-expansion-panel-header>
+                <mat-panel-title class="title-md dark bold flex panel-title"
+                [class.title-sm]="screenWidth <= 370"
+                >
+                    <div class="hotel-name">
+                        <p class="spacer-right-md">
+                            {{ hotel.name }}
+                        </p>
+                    </div>
+                    <div class="title--icon">
+                        <fa-icon id="hotel-icon" [icon]="faHotel"></fa-icon>
+                    </div>
+                </mat-panel-title>
+                <mat-panel-description
+                    class="title-md light-purple medium flex panel-description"
+                    [class.title-sm]="screenWidth <= 370"
+                >
+                    {{
+                        panelOpenState
+                            ? ("CARD.HIDEDETAILS" | translate)
+                            : ("CARD.SHOWDETAILS" | translate)
+                    }}
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="expanded">
+                <div class="description">
+                    <p>
+                        <strong>{{ hotel.name }}</strong> é uma cadeia de hotéis
+                        e resorts {{ hotel.description }}
+                    </p>
+                </div>
+                <div class="show-more">
+                    <button (click)="openDialog()">{{"CARD.BUTTON.SHOWMORE" | translate}}</button>
+                </div>
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

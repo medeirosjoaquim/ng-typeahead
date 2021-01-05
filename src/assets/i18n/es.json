@@ -1,0 +1,20 @@
+{
+    "GRID": {
+      "SEARCHRESULT": "Resultados de busqueda",
+      "EMPTYSTATE": "Buscar :)"
+    },
+    "CARD": {
+      "HIDEDETAILS": "Ocultar detalles",
+      "SHOWDETAILS": "Mostrar detalles",
+      "BUTTON": {
+        "SHOWMORE": "VER MÁS"
+      },
+      "MODAL": {
+        "TITLE": "¿Quieres ir a la pantalla?",
+        "BUTTON": {
+          "YES": "SI",
+          "NO": "NO"
+        }
+      }
+    }
+}

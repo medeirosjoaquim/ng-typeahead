@@ -1,0 +1,58 @@
+@import "~normalize.css";
+@import "./assets/scss/layout.scss";
+@import "./assets/scss/breakpoints.scss";
+@import "./assets/scss/typography.scss";
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.custom-toast {
+    background-color: #555;
+    color: #fcdb67;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+@include breakpoint(tablet) {
+    .mat-snack-bar-container {
+        max-width: 34rem !important;
+    }
+    .custom-toast {
+        background-color: #555;
+        color: #fcdb67;
+        font-family: "Lato", sans-serif;
+        font-size: 1.25rem;
+        font-weight: bold;
+        width: 34rem;
+        text-align: center;
+    }
+}
+
+.mat-expansion-panel-header-description {
+    justify-content: end;
+    align-items: center;
+}
+
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+}
+.mat-typography p {
+    margin: 0;
+    padding: 0;
+}
+
+.mat-dialog-container {
+    border-radius: 0 !important;
+}
+
+@include breakpoint(mobile) {
+    .confirmation-modal {
+        width: 300px;
+    }
+}

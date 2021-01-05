@@ -1,0 +1,44 @@
+<div class="header">
+    <div class="lang">
+        <ul id="list-languages">
+            <li class="spacer-right-sm">
+                <img
+                    src="/assets/images/pt.svg"
+                    class="flag-icon"
+                    alt="idioma portugues"
+                    (click)="useLanguage('pt')"
+                />
+            </li>
+            <li class="spacer-right-sm">
+                <img
+                    src="/assets/images/es.svg"
+                    class="flag-icon"
+                    alt="idioma espanhol"
+                    (click)="useLanguage('es')"
+                />
+            </li>
+            <li>
+                <img
+                    src="/assets/images/en.svg"
+                    class="flag-icon"
+                    alt="idioma ingles"
+                    (click)="useLanguage('en')"
+                />
+            </li>
+        </ul>
+    </div>
+    <div class="inner-header flex">
+        <div class="hero">
+            <div class="logo spacer-bottom-lg">
+                <img
+                    src="/assets/images/whitetotvslogo.png"
+                    alt="Logo da Totvs"
+                />
+            </div>
+            <app-search-input></app-search-input>
+        </div>
+    </div>
+    <div id="curvy-header-image">
+        <img src="/assets/images/curvy-header.svg" class="waves" />
+    </div>
+</div>

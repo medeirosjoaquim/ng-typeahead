@@ -1,0 +1,46 @@
+@import "./breakpoints.scss";
+
+.app {
+    font-family: "Lato", sans-serif;
+}
+.gray {
+    color: #999;
+}
+.dark {
+    color: rgba(0, 0, 0, 0.7);
+}
+.light-purple {
+    color: #cc50dc;
+}
+.title-gd {
+    font-size: 32px !important;
+}
+.title-md {
+    font-size: 16px !important;
+}
+.title-sm {
+    font-size: 12px !important;
+}
+
+.body-xd {
+    font-size: 18px !important;
+}
+.body-gd {
+    font-size: 16px !important;
+}
+.body-md {
+    font-size: 14px !important;
+}
+.body-sm {
+    font-size: 12px !important;
+}
+
+.bold {
+    font-weight: 700;
+}
+.medium {
+    font-weight: 500;
+}
+.regular {
+    font-weight: 400;
+}

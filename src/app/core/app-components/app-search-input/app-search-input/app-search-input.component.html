@@ -1,0 +1,23 @@
+<div class="container" >
+    <div class="search-box">
+        <input
+            id="search-input"
+            #searchInput
+            [(ngModel)]="search"
+            (ngModelChange)="searchUpdate.next($event)"
+            [matAutocomplete]="auto"
+        />
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+            <mat-option
+                *ngFor="let option of (prefetchResults$ | async)"
+                [value]="option"
+                (onSelectionChange)="selectHotel(option)"
+            >
+                {{ option.name }}
+            </mat-option>
+        </mat-autocomplete>
+        <button type="submit" class="icon-box">
+            <fa-icon id="search-icon" [icon]="faSearch"></fa-icon>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="content" *ngIf="hotelsList$ | async as hotel; else emptyState">
+        <div class="hero spacer-bottom-lg">
+          <p class="title-md bold gray">
+              {{ "GRID.SEARCHRESULT" | translate }}
+          </p>
+      </div>
+      <div class="card-grid">
+          <app-group-card [hotels]="[hotel]"></app-group-card>
+      </div>
+    </div>
+    <ng-template #emptyState>
+        <app-empty-state></app-empty-state>
+    </ng-template>
+</div>

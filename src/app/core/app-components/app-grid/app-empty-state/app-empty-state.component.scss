@@ -1,0 +1,27 @@
+@import "../../../../../assets/scss/breakpoints.scss";
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .empty-state--image {
+        img {
+            height: 8rem;
+        }
+    }
+    #disclaimer {
+        color: #999;
+    }
+}
+
+@include breakpoint(desktop) {
+    .container {
+        .empty-state--image {
+            img {
+                height: 10rem;
+            }
+        }
+    }
+}
