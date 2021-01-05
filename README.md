@@ -54,7 +54,3 @@ pelo navegador em localhost:4200
 ## Testes
 Para executar os testes, utilize o comando 
 ```ng test```
-## Contato
-
-Mande um e-mail! johnboxcodes@gmail.com! Ou diga oi no Linkedin:
-linkedin.com/in/joaquim-medeiros/
