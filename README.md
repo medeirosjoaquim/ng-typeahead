@@ -1,8 +1,22 @@
+This one is  a search component (with a type ahead feature). Another one I've made as a challenge for some position, it's kinda pixel perfect. I also made the api for this one but the repo is not clean enough to be made public.
+
+#### check the online demo <a href="https://list-hotels.herokuapp.com" target="_blank">here</a>
+
+
+### Imagens
+![Imagem 1](./1.jpg "Imagem 1")
+![Imagem 2](./2.jpg "Imagem 2")
+![Imagem 3](./3.jpg "Imagem 3")
+![Imagem 4](./4.jpg "Imagem 4")
+
+
+
+----------------------
+
 # Desafio TOTVS - Angular List Hotels
 
 <br />
 <p align="center">
-    <img src="./logo.jpg" alt="Logo" width="180">
 <p align="center">
   <a href="#o-que-é">O que é</a> •
   <a href="#instalação">Instalação</a> •
